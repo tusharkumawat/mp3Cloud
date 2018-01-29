@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>mp3Cloud</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Registration</servlet-name>
+    <servlet-class>Registration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registration</servlet-name>
+    <url-pattern>/Registration</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <description>Location to store uploaded file</description>
+    <param-name>file-upload</param-name>
+    <param-value>D:\rat\J2EE\apache-tomcat-8.0.28-windows-x86\apache-tomcat-8.0.28\webapps\mp3cloud_data\</param-value>
+  </context-param>
+  <context-param>
+    <description>Location to store uploaded dp file</description>
+    <param-name>file-upload-dp</param-name>
+    <param-value>D:\rat\J2EE\apache-tomcat-8.0.28-windows-x86\apache-tomcat-8.0.28\webapps\mp3cloud_data\dp\</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>Rate3</servlet-name>
+    <servlet-class>Rate3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Rate3</servlet-name>
+    <url-pattern>/Rate3</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Rate4</servlet-name>
+    <servlet-class>Rate4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Rate4</servlet-name>
+    <url-pattern>/Rate4</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Rate5</servlet-name>
+    <servlet-class>Rate5</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Rate5</servlet-name>
+    <url-pattern>/Rate5</url-pattern>
+  </servlet-mapping>
+</web-app>
